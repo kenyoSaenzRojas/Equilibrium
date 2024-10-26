@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Outfit:wght@100..900&display=swap');
+
+:root{
+    --icon :<svg width="17" height="17" xmlns="http://www.w3.org/2000/svg"><path d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z" fill="#8BACD9"/></svg>;
+}
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+  
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: hsl(217, 54%, 11%);
+    font-family: "Outfit", serif;
+
+}
+
+.card{
+    margin: auto;
+    width: 350px;
+    height: 630px;
+   box-shadow: 50px 30px 50px hsl(217, 54%, 10%);
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 10px;
+    
+}
+.imagen{
+    width: 320px;
+    height: 350px;
+    margin: 20px 15px 10px 15px;
+    border-radius: 10px;
+    position: relative;
+
+}
+.imagen.ojo svg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.imagen::before{
+    transition: all .5s ease-in;
+    background-color: rgb(0, 194, 129);
+    position: absolute;
+    border-radius: 10px;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    cursor: pointer;   
+}
+.imagen:hover::before{
+    /* filter: opacity(0.5); */
+    opacity: .6 ;
+} 
+
+.imagen img{
+    width: 320px;
+    height: 350px;
+    /* margin: 20px 15px 10px 15px; */
+    border-radius: 10px;
+}
+.contenedor{
+    margin: 0px 20px 20px 20px; ;
+}
+hr{
+    border-color: hsl(215, 32%, 27%);
+}
+h1{
+    color:hsl(0, 0%, 100%);
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.flex p{
+    font-size: 18px;
+    font-weight: 400;
+    color: hsl(215, 51%, 70%);
+    margin-bottom: 20px;
+}
+.flex2 p{
+    font-weight: 300;
+}
+.linea{
+    color: hsl(215, 51%, 70%);
+}
+.flex1 .celeste{
+   
+    color:hsl(178, 100%, 50%);
+}
+.flex1 .celeste>.svg{
+    margin-right: 5px;
+    /* align-items: center; */
+} 
+.flex1 .linea>svg{
+    padding-top: 1px;
+}
+
+.flex1{
+    display: flex;
+    justify-content: space-between;
+}
+.linea img{
+    height: 10px;
+    margin-right: 5px;
+}
+.flex2{
+    display: flex;
+}
+.flex2 .uno{
+    margin-right: 10px;
+}
+.flex2 .dos{
+    margin-top: 10px;
+    color: hsl(215, 51%, 70%);
+}
+.flex2 .dos span{
+    color: #fff;
+}
+.avatar{
+    width: 40px;
+}
+/* .imagen img:hover{
+    
+    filter: opacity(.10);
+    filter: opacity(red);
+} */
+
+.flex2 .dos span:hover{
+    color:hsl(178, 100%, 50%);
+}
+h1:hover{
+    color:hsl(178, 100%, 50%);
+}
+
+
